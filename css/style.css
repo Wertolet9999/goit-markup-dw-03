@@ -1,0 +1,226 @@
+/* колір основного тексту #212121 */
+/*вторинний колір тексту #757575 */
+/* акцентний колір #2196F3 */
+/*білий колір #FFFFFF*/
+/* колір логотипу #000000*/
+/*колір посилань футера rgba(255, 255, 255, 0.6);*/
+
+:root{
+
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --accent-color: #2196F3;
+    --white-color: #FFFFFF;
+    --logo-text-color: #000000;
+    --footer-text-color: rgba(255, 255, 255, 0.6);
+    --visual-text-color: #2F303A;
+    --background-color: #F5F4FA; ;
+
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;                                    /*приховування заголовків секцій*/
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+.logo{                                      /*Стилізація логотипу*/
+   
+    font-family: Raleway;
+    color: var(--logo-text-color);
+    font-size: 26px;
+    line-height: 1.19;
+
+}
+
+.site-nav-list .link{                      /*Навігація посилань сайту в хедері */
+    
+    color: var(--primary-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+}
+
+.site-nav-list .link.current{                  /*Підсвічування поточної сторінки*/
+    color: var(--accent-color);
+
+    }
+
+.contacts .link{                                /*Контакти хедера*/
+    
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+}
+
+.hero{
+
+background-color: var(--visual-text-color); /*Для візуального відображення тексту*/
+
+}
+
+.hero-title{                              /*Стилізація заголовку секції героя*/
+    
+    color: var(--white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+}
+
+.hero-button{                                   /*Стилізація кнопки героя*/
+  
+    font-family: Roboto;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    
+}
+
+
+.quality-list h3{                                 /*підзаголовки секції якості*/
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+}
+
+.quality-list p{                                  /*стилізація тексту секції якості*/
+    
+    color: var(--secondary-text-color);
+    line-height: 1.71;
+
+}
+
+.section-title{                                    /*заголовки секцій робіт і команди*/
+
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+
+}
+
+.team{
+    background-color: var(--background-color)
+}
+
+.team-list h3{                                       /*список команди-ім’я, прізвище*/
+    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+
+}
+
+.team-list p{                                              /*список посад у команді*/
+    
+
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+
+}
+
+.footer-section {                                         /*Для візуального відображення тексту*/
+    
+    background-color: var(--visual-text-color);
+}
+
+
+.footer-logo{                                           /*стилізація логотипу у футері*/
+    
+    font-family: Raleway;
+    color: var(--white-color);
+    font-size: 26px;
+    line-height: 1.19;
+
+}
+
+
+.web-part,
+.site-nav-list .link:hover,
+.site-nav-list .link:focus,                           /*стилізація  логотипу + ховери і фокуси посилань та кнопок*/
+.contacts .link:hover,
+.contacts .link:focus
+{
+
+    color: var(--accent-color);
+}
+
+
+
+.local{                                                           /*адреса у футері*/
+
+    color: var(--white-color);
+    font-style: normal;    
+    line-height: 1.71;
+
+}
+
+.contacts .contact{                                            /*меіл і телефон у футері*/
+    color: var(--footer-text-color);
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.71;
+}
+
+.button-list button{          /*стилізація сторінки “Портфоліо“ стилізація кнопок*/
+   
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    cursor: pointer;
+    letter-spacing: 0.03em;
+
+}
+
+.button-list button:hover,                        /*ховер і фокус кнопок для “Портфоліо“*/
+.button-list button:focus{
+    background-color: var(--accent-color);
+    color: var(--white-color)
+}
+
+    
+.portfolio-section h2{                             /*назви робіт у списку “Портфоліо“*/
+
+    color: var(--primary-text-color);
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.portfolio-section p{                                 /*напрямки робіт “Портфоліо“*/
+   
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    line-height: 1.9;
+
+}
+
+a{
+    text-decoration: none;
+}                                     /*видалення підкреслень посилань і маркерів списків*/
+li{
+    list-style-type: none
+}
